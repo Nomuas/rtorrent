@@ -23,7 +23,7 @@ method.insert = d.get_data_full_path, simple, "branch=((d.is_multi_file)),((cat,
 method.insert = d.move_to_complete, simple, "d.directory.set=$argument.1=; execute=mkdir,-p,$argument.1=; execute=mv,-u,$argument.0=,$argument.1=; d.save_full_session="
 method.set_key = event.download.finished,move_complete,"d.move_to_complete=$d.get_data_full_path=,$d.get_finished_dir="
 
-# And don't check hash when finished
+# And don't check hash when finished 
 check_hash = no
 
 # Watch directories (add more as you like, but use unique schedule names)
