@@ -20,4 +20,4 @@ rm -f /config/.session/rtorrent.lock
 # Script use for this bug -> https://github.com/docker/docker/issues/8755
 #script -qc "tmux -2 new-session -d -s rtorrent rtorrent" /dev/null
 #tmux -2 new-session -d -s rtorrent rtorrent
-rtorrent
+exec rtorrent
